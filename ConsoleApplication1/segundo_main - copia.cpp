@@ -40,12 +40,24 @@ void CrearTriangulo()
 		-0.8f,  -0.5f, 0.0f,
 
 		 -0.8f, 0.25f, 0.0f,// izquierda
-		 -0.7, 0.25f, 0.0f,// derecha 
+		 -0.6, 0.25f, 0.0f,// derecha 
 		 -0.8f, 0.5f, 0.0f,// central
 
-		 -0.7f, 0.25f, 0.0f,// izquierda
-		 -0.6, 0.25f, 0.0f,// derecha 
-		 -0.6f, 0.5f, 0.0f,// central
+		 -0.6, 0.25f, 0.0f,// izquierda
+		 -0.4, 0.25f, 0.0f,// derecha 
+		 -0.4f, 0.5f, 0.0f,// central
+
+		 -0.8, 0.25f, 0.0f,// izquierda
+		 -0.4, 0.25f, 0.0f,// derecha 
+		 -0.6f, 0.0f, 0.0f,// central
+
+		-0.4f, -0.5f, 0.0f,
+		-0.3f, -0.5f, 0.0f,
+		-0.3f,  0.5f, 0.0f,
+
+		-0.4f, 0.5f, 0.0f,
+		-0.3f, 0.5f, 0.0f,
+		-0.4f,  -0.5f, 0.0f,
 	};
 	glGenVertexArrays(1, &VAO); //generar 1 VAO, ahi se almacenan los arreglos de los datos de vertices 
 	// se puede generar mas de un VAO a la vez 
@@ -226,7 +238,7 @@ int main()
 			glUseProgram(shader);
 
 			glBindVertexArray(VAO);
-			glDrawArrays(GL_TRIANGLES, 0, 12);
+			glDrawArrays(GL_TRIANGLES, 0, 21);
 			glBindVertexArray(0);
 
 			glUseProgram(0);
