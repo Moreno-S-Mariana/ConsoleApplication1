@@ -76,12 +76,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\ConsoleApplication1\ConsoleApplication1\glm;C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\ConsoleApplication1\ConsoleApplication1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\EJERCICIO DE CLASE 01\ConsoleApplication1\glm;C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\EJERCICIO DE CLASE 01\ConsoleApplication1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\ConsoleApplication1\ConsoleApplication1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\EJERCICIO DE CLASE 01\ConsoleApplication1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -93,14 +93,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\ConsoleApplication1\ConsoleApplication1\glm;C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\ConsoleApplication1\ConsoleApplication1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\EJERCICIO DE CLASE 01\ConsoleApplication1\glm;C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\EJERCICIO DE CLASE 01\ConsoleApplication1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\ConsoleApplication1\ConsoleApplication1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Mariana\Desktop\LAB DE COMPUTACION GRTAFICA FI UNAM\EJERCICIO DE CLASE 01\ConsoleApplication1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

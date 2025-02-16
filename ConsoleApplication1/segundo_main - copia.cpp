@@ -30,22 +30,22 @@ void main()											\n\
 void CrearTriangulo()
 {// TRES COLUMNAS PARA IDENTIFICAR VISUALMENTE QUE TENGO VERTICES CON COORDENADAS DE X,Y,Z
 	GLfloat vertices[] = {
-
+		//x       y     z
 		-0.9f, -0.5f, 0.0f,
-		-0.1f, -0.5f, 0.0f,
+		-0.8f, -0.5f, 0.0f,
 		-0.9f,  0.5f, 0.0f,
 
 		-0.9f, 0.5f, 0.0f,
-		-0.1f, 0.5f, 0.0f,
-		-0.1f,  -0.5f, 0.0f,
+		-0.8f, 0.5f, 0.0f,
+		-0.8f,  -0.5f, 0.0f,
 
-		 0.1f, -0.0f, 0.0f,// izquierda
-		 0.9f, -0.0f, 0.0f,// derecha 
-		 0.5f, -0.5f, 0.0f,// central
+		 -0.8f, 0.25f, 0.0f,// izquierda
+		 -0.7, 0.25f, 0.0f,// derecha 
+		 -0.8f, 0.5f, 0.0f,// central
 
-		  0.1f, -0.0f, 0.0f,// izquierda
-		  0.9f, -0.0f, 0.0f,// derecha 
-		  0.5f, 0.5f, 0.0f// central
+		 -0.7f, 0.25f, 0.0f,// izquierda
+		 -0.6, 0.25f, 0.0f,// derecha 
+		 -0.6f, 0.5f, 0.0f,// central
 	};
 	glGenVertexArrays(1, &VAO); //generar 1 VAO, ahi se almacenan los arreglos de los datos de vertices 
 	// se puede generar mas de un VAO a la vez 
