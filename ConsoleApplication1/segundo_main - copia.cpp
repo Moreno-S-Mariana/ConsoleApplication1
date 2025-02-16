@@ -30,6 +30,8 @@ void main()											\n\
 void CrearTriangulo()
 {// TRES COLUMNAS PARA IDENTIFICAR VISUALMENTE QUE TENGO VERTICES CON COORDENADAS DE X,Y,Z
 	GLfloat vertices[] = {
+
+		//Primera letra M
 		//x       y     z
 		-0.9f, -0.5f, 0.0f,
 		-0.8f, -0.5f, 0.0f,
@@ -58,6 +60,36 @@ void CrearTriangulo()
 		-0.4f, 0.5f, 0.0f,
 		-0.3f, 0.5f, 0.0f,
 		-0.4f,  -0.5f, 0.0f,
+
+		// Segunda letra M
+
+		-0.1f, -0.5f, 0.0f,
+		0.0f, -0.5f, 0.0f,
+		-0.1f,  0.5f, 0.0f,
+
+		-0.1f, 0.5f, 0.0f,
+		0.0f, 0.5f, 0.0f,
+		0.0f,  -0.5f, 0.0f,
+
+		0.0f, 0.25f, 0.0f,// izquierda
+		0.2, 0.25f, 0.0f,// derecha 
+		0.0f, 0.5f, 0.0f,// central
+
+		0.2, 0.25f, 0.0f,// izquierda
+		0.4, 0.25f, 0.0f,// derecha 
+		0.4f, 0.5f, 0.0f,// central
+
+		0.0f, 0.25f, 0.0f,// izquierda
+		0.4f, 0.25f, 0.0f,// derecha 
+		0.2f, 0.0f, 0.0f,// central
+
+		0.4f, -0.5f, 0.0f,
+		0.5f, -0.5f, 0.0f,
+		0.5f,  0.5f, 0.0f,
+
+		0.4f, 0.5f, 0.0f,
+		0.5f, 0.5f, 0.0f,
+		0.4f,  -0.5f, 0.0f,
 	};
 	glGenVertexArrays(1, &VAO); //generar 1 VAO, ahi se almacenan los arreglos de los datos de vertices 
 	// se puede generar mas de un VAO a la vez 
@@ -238,7 +270,7 @@ int main()
 			glUseProgram(shader);
 
 			glBindVertexArray(VAO);
-			glDrawArrays(GL_TRIANGLES, 0, 21);
+			glDrawArrays(GL_TRIANGLES, 0, 42);
 			glBindVertexArray(0);
 
 			glUseProgram(0);
