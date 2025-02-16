@@ -3,6 +3,10 @@
 #include <glew.h>
 #include <glfw3.h>
 #include <windows.h>
+#include <cstdlib>  // Para rand() y srand()
+#include <ctime>    // Para time()
+
+
 //Dimensiones de la ventana
 const int WIDTH = 1000, HEIGHT = 1000;
 GLuint VAO, VBO, shader;
@@ -266,6 +270,8 @@ void CompileShaders() {
 }
 int main()
 {
+	// Inicializar la semilla del generador de números aleatorios
+	srand((unsigned int)time(NULL));
 	//Inicialización de GLFW
 	if (!glfwInit())
 	{
@@ -339,25 +345,24 @@ int main()
 			float tiempoActual = (float)glfwGetTime();
 
 			// Se verifica si han pasado al menos 'intervaloCambio' segundos desde el último cambio
-			if (tiempoActual - ultimoTiempoCambio >= intervaloCambio) {
+			//if (tiempoActual - ultimoTiempoCambio >= intervaloCambio) {
 				// Se incrementa el índice de color de forma cíclica (0 -> 1 -> 2 -> 0 -> ...)
-				indiceColor = (indiceColor + 1) % 3;
+				//indiceColor = (indiceColor + 1) % 3;
 				// Se actualiza el tiempo del último cambio al tiempo actual
-				ultimoTiempoCambio = tiempoActual;
-			}
+				//ultimoTiempoCambio = tiempoActual;
+			//}
 
-			// Se selecciona el color de fondo según el valor de 'indiceColor'
-			if (indiceColor == 0) {
-				// Si 'indiceColor' es 0, se establece el fondo azul
-				glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
-			}
-			else if (indiceColor == 1) {
-				// Si 'indiceColor' es 1, se establece el fondo rojo
-				glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
-			}
-			else if (indiceColor == 2) {
-				// Si 'indiceColor' es 2, se establece el fondo verde
-				glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
+			if (tiempoActual - ultimoTiempoCambio >= intervaloCambio) {
+				// Generar valores aleatorios entre 0.0 y 1.0 para R, G y B
+				float r = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+				float g = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+				float b = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+
+				// Se actualiza el color de fondo con los valores aleatorios
+				glClearColor(r, g, b, 1.0f);
+
+				// Se actualiza el tiempo del último cambio
+				ultimoTiempoCambio = tiempoActual;
 			}
 
 
