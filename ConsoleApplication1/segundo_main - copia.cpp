@@ -4,7 +4,7 @@
 #include <glfw3.h>
 #include <windows.h>
 //Dimensiones de la ventana
-const int WIDTH = 800, HEIGHT = 600;
+const int WIDTH = 1000, HEIGHT = 1000;
 GLuint VAO, VBO, shader;
 
 //Vertex Shader
@@ -33,63 +33,129 @@ void CrearTriangulo()
 
 		//Primera letra M
 		//x       y     z
-		-0.9f, -0.5f, 0.0f,
-		-0.8f, -0.5f, 0.0f,
-		-0.9f,  0.5f, 0.0f,
+		-0.95f, -0.5f, 0.0f,
+		-0.85f, -0.5f, 0.0f,
+		-0.95f,  0.5f, 0.0f,
 
-		-0.9f, 0.5f, 0.0f,
-		-0.8f, 0.5f, 0.0f,
-		-0.8f,  -0.5f, 0.0f,
+		-0.95f, 0.5f, 0.0f,
+		-0.85f, 0.5f, 0.0f,
+		-0.85f,  -0.5f, 0.0f,
 
-		 -0.8f, 0.25f, 0.0f,// izquierda
-		 -0.6, 0.25f, 0.0f,// derecha 
-		 -0.8f, 0.5f, 0.0f,// central
+		 -0.85f, 0.25f, 0.0f,// izquierda
+		 -0.65f, 0.25f, 0.0f,// derecha 
+		 -0.85f, 0.5f, 0.0f,// central
 
-		 -0.6, 0.25f, 0.0f,// izquierda
-		 -0.4, 0.25f, 0.0f,// derecha 
-		 -0.4f, 0.5f, 0.0f,// central
+		 -0.65, 0.25f, 0.0f,// izquierda
+		 -0.45, 0.25f, 0.0f,// derecha 
+		 -0.45f, 0.5f, 0.0f,// central
 
-		 -0.8, 0.25f, 0.0f,// izquierda
-		 -0.4, 0.25f, 0.0f,// derecha 
-		 -0.6f, 0.0f, 0.0f,// central
+		 -0.85f, 0.25f, 0.0f,// izquierda
+		 -0.45f, 0.25f, 0.0f,// derecha 
+		 -0.65f, 0.0f, 0.0f,// central
 
-		-0.4f, -0.5f, 0.0f,
-		-0.3f, -0.5f, 0.0f,
-		-0.3f,  0.5f, 0.0f,
+		-0.45f, -0.5f, 0.0f,
+		-0.35f, -0.5f, 0.0f,
+		-0.35f,  0.5f, 0.0f,
 
-		-0.4f, 0.5f, 0.0f,
-		-0.3f, 0.5f, 0.0f,
-		-0.4f,  -0.5f, 0.0f,
+		-0.45f, 0.5f, 0.0f,
+		-0.35f, 0.5f, 0.0f,
+		-0.45f,  -0.5f, 0.0f,
 
 		// Segunda letra M
 
-		-0.1f, -0.5f, 0.0f,
-		0.0f, -0.5f, 0.0f,
-		-0.1f,  0.5f, 0.0f,
+		-0.3f, -0.5f, 0.0f,
+		-0.2f, -0.5f, 0.0f,
+		-0.3f,  0.5f, 0.0f,
 
-		-0.1f, 0.5f, 0.0f,
-		0.0f, 0.5f, 0.0f,
-		0.0f,  -0.5f, 0.0f,
+		-0.3f, 0.5f, 0.0f,
+		-0.2f, 0.5f, 0.0f,
+		-0.2f,  -0.5f, 0.0f,
 
-		0.0f, 0.25f, 0.0f,// izquierda
+		-0.2f, 0.25f, 0.0f,// izquierda
+		0.0, 0.25f, 0.0f,// derecha 
+		-0.2f, 0.5f, 0.0f,// central
+
+		0.0, 0.25f, 0.0f,// izquierda
 		0.2, 0.25f, 0.0f,// derecha 
-		0.0f, 0.5f, 0.0f,// central
+		0.2f, 0.5f, 0.0f,// central
 
-		0.2, 0.25f, 0.0f,// izquierda
-		0.4, 0.25f, 0.0f,// derecha 
-		0.4f, 0.5f, 0.0f,// central
+		-0.2f, 0.25f, 0.0f,// izquierda
+		0.2f, 0.25f, 0.0f,// derecha 
+		0.0f, 0.0f, 0.0f,// central
 
-		0.0f, 0.25f, 0.0f,// izquierda
-		0.4f, 0.25f, 0.0f,// derecha 
-		0.2f, 0.0f, 0.0f,// central
+		0.2f, -0.5f, 0.0f,
+		0.3f, -0.5f, 0.0f,
+		0.3f,  0.5f, 0.0f,
 
-		0.4f, -0.5f, 0.0f,
-		0.5f, -0.5f, 0.0f,
-		0.5f,  0.5f, 0.0f,
+		0.2f, 0.5f, 0.0f,
+		0.3f, 0.5f, 0.0f,
+		0.2f,  -0.5f, 0.0f,
 
-		0.4f, 0.5f, 0.0f,
-		0.5f, 0.5f, 0.0f,
-		0.4f,  -0.5f, 0.0f,
+		//letra S 
+
+		0.35f, -0.3f, 0.0f,
+		0.55f, -0.3f, 0.0f,
+		0.35f,  -0.1f, 0.0f,
+
+		0.35f, -0.3f, 0.0f,
+		0.55f, -0.3f, 0.0f,
+		0.55f,  -0.5f, 0.0f,
+
+		0.55f, -0.3f, 0.0f,
+		0.75f, -0.3f, 0.0f,
+		0.55f,  -0.5f, 0.0f,
+
+		0.55f, -0.5f, 0.0f,
+		0.75f, -0.5f, 0.0f,
+		0.75f, -0.3f, 0.0f,
+
+		0.75f, -0.3f, 0.0f,
+		0.95f, -0.3f, 0.0f,
+		0.75f, -0.5f, 0.0f,
+
+		0.75f, -0.3f, 0.0f,
+		0.95f, -0.3f, 0.0f,
+		0.95f, -0.1f, 0.0f,
+
+		0.75f, -0.3f, 0.0f,
+		0.95f, -0.1f, 0.0f,
+		0.75f, 0.1f, 0.0f,
+
+		0.55f, -0.1f, 0.0f,
+		0.75f, -0.3f, 0.0f,
+		0.75f, 0.1f, 0.0f,
+
+		0.55f, -0.1f, 0.0f,
+		0.75f, 0.1f, 0.0f,
+		0.55f, 0.3f, 0.0f,
+
+		0.35f, 0.1f, 0.0f,
+		0.55f, -0.1f, 0.0f,
+		0.55f, 0.3f, 0.0f,
+
+		0.35f, 0.3f, 0.0f,
+		0.55f, 0.3f, 0.0f,
+		0.35f, 0.1f, 0.0f,
+
+		0.35f, 0.3f, 0.0f,
+		0.55f, 0.3f, 0.0f,
+		0.55f, 0.5f, 0.0f,
+
+		0.55f, 0.3f, 0.0f,
+		0.75f, 0.3f, 0.0f,
+		0.55f, 0.5f, 0.0f,
+
+		0.55f, 0.5f, 0.0f,
+		0.75f, 0.5f, 0.0f,
+		0.75f, 0.3f, 0.0f,
+
+		0.75f, 0.3f, 0.0f,
+		0.95f, 0.3f, 0.0f,
+		0.75f, 0.5f, 0.0f,
+
+		0.75f, 0.3f, 0.0f,
+		0.95f, 0.3f, 0.0f,
+		0.95f, 0.1f, 0.0f,
 	};
 	glGenVertexArrays(1, &VAO); //generar 1 VAO, ahi se almacenan los arreglos de los datos de vertices 
 	// se puede generar mas de un VAO a la vez 
@@ -270,7 +336,7 @@ int main()
 			glUseProgram(shader);
 
 			glBindVertexArray(VAO);
-			glDrawArrays(GL_TRIANGLES, 0, 42);
+			glDrawArrays(GL_TRIANGLES, 0, 90);
 			glBindVertexArray(0);
 
 			glUseProgram(0);
