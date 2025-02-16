@@ -61,35 +61,65 @@ void CrearTriangulo()
 		-0.35f, 0.5f, 0.0f,
 		-0.45f,  -0.5f, 0.0f,
 
-		// Segunda letra M
+		// Segunda letra A
 
 		-0.3f, -0.5f, 0.0f,
 		-0.2f, -0.5f, 0.0f,
-		-0.3f,  0.5f, 0.0f,
+		-0.2f, -0.2f, 0.0f,
 
-		-0.3f, 0.5f, 0.0f,
-		-0.2f, 0.5f, 0.0f,
-		-0.2f,  -0.5f, 0.0f,
+		-0.2f, -0.2f, 0.0f,
+		-0.1f, -0.2f, 0.0f,
+		-0.2f, -0.5f, 0.0f,
 
-		-0.2f, 0.25f, 0.0f,// izquierda
-		0.0, 0.25f, 0.0f,// derecha 
-		-0.2f, 0.5f, 0.0f,// central
+		-0.2f, -0.2f, 0.0f,// izquierda
+		-0.1, -0.2f, 0.0f,// derecha 
+		-0.1f,0.1f, 0.0f,// central
 
-		0.0, 0.25f, 0.0f,// izquierda
-		0.2, 0.25f, 0.0f,// derecha 
-		0.2f, 0.5f, 0.0f,// central
+		-0.1, 0.1f, 0.0f,// izquierda
+		0.0, 0.1f, 0.0f,// derecha 
+		-0.1f, -0.2f, 0.0f,// central
+		//pico
+		-0.1f, 0.1f, 0.0f,// izquierda
+		0.0f, 0.1f, 0.0f,// derecha 
+		0.0f, 0.5f, 0.0f,// central
+		//pico
+		0.0f, 0.1f, 0.0f,
+		0.1f, 0.1f, 0.0f,
+		0.0f,  0.5f, 0.0f,
 
-		-0.2f, 0.25f, 0.0f,// izquierda
-		0.2f, 0.25f, 0.0f,// derecha 
-		0.0f, 0.0f, 0.0f,// central
+		0.1f, 0.1f, 0.0f,
+		0.0f, 0.1f, 0.0f,
+		0.1f,  -0.2f, 0.0f,
 
+		0.2f, -0.2f, 0.0f,// izquierda
+		0.1, -0.2f, 0.0f,// derecha 
+		0.1f,0.1f, 0.0f,// central
+		
+		0.2f, -0.2f, 0.0f,
+		0.1f, -0.2f, 0.0f,
 		0.2f, -0.5f, 0.0f,
-		0.3f, -0.5f, 0.0f,
-		0.3f,  0.5f, 0.0f,
 
-		0.2f, 0.5f, 0.0f,
-		0.3f, 0.5f, 0.0f,
-		0.2f,  -0.5f, 0.0f,
+		0.3f, -0.5f, 0.0f,
+		0.2f, -0.5f, 0.0f,
+	    0.2f, -0.2f, 0.0f,
+
+
+		0.0f, -0.3f, 0.0f,
+		0.15f, -0.3f, 0.0f,
+		0.0f, -0.2f, 0.0f,
+
+		0.0f, -0.2f, 0.0f,
+		0.15f, -0.2f, 0.0f,
+		0.15f, -0.3f, 0.0f,
+
+		0.0f, -0.3f, 0.0f,
+		-0.15f, -0.3f, 0.0f,
+		0.0f, -0.2f, 0.0f,
+
+		0.0f, -0.2f, 0.0f,
+		-0.15f, -0.2f, 0.0f,
+		-0.15f, -0.3f, 0.0f,
+
 
 		//letra S 
 
@@ -336,7 +366,7 @@ int main()
 			glUseProgram(shader);
 
 			glBindVertexArray(VAO);
-			glDrawArrays(GL_TRIANGLES, 0, 90);
+			glDrawArrays(GL_TRIANGLES, 0, 111);
 			glBindVertexArray(0);
 
 			glUseProgram(0);
