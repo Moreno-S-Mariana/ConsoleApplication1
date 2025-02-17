@@ -24,7 +24,7 @@
     <ClCompile Include="Shader.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="segundo_main - copia.cpp">
+    <ClCompile Include="P01-319170252.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

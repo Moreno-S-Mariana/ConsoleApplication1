@@ -336,7 +336,7 @@ int main()
 		float ultimoTiempoCambio = glfwGetTime();
 
 		// Se inicializa el índice del color actual; 0 corresponde a azul, 1 a rojo, y 2 a verde
-		int indiceColor = 0;
+	//	int indiceColor = 0;
 
 		// Bucle principal que continúa hasta que se cierra la ventana
 		while (!glfwWindowShouldClose(mainWindow))
